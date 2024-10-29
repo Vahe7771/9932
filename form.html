@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h2>Epicode-il blog dei developers</h2>
+        <div>
+          <img src="assets/img/epicode-logo.png" alt="logo" width="100px" />
+        </div>
+  
+        <nav>
+          <ul>
+            <li><a href="index.html" title="Tabelle">Tabelle</a>"</li>
+            <li  id="visited">Form</li>
+            <li><a href="video.html" title="video">video</a>"</li>
+          </ul>
+        </nav>
+      </header>
+    <h1>Epicode-il blog dei developers</h1>
+    <main>
+        <section>
+            <article>
+    <h2>Come creare un template per i post</h2>
+    <form method="get" action="grazie.html">
+        <label for="nome">Home</label>&nbsp;
+        <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome"/>
+        <label for="cognome">Articoli</label>&nbsp;
+        <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome"/>
+        <label for="email">Jobs</label>&nbsp;
+        <input type="email" id="email" name="email" placeholder="Inserisci la tua email"/>
+        <p>&nbsp;</p>
+        <button type="submit">Invia</button>
+        <button type="reset">Annulla</button>
+    </form>
+</article>
+</hr>
+<article>
+<form method="get" action="grazie.html">
+    <!-- gruppo anagrafica -->
+ <fieldset>
+    <legend>Anagrafica</legennd>
+        <label for="nome">Nome</label>&nbsp;
+        <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome"/>
+        <label for="cognome">Cognome</label>&nbsp;
+        <input type="text" id="cognome" name="cognome" required/>
+        <label for="dataNascita">Data di nascita</label>&nbsp;
+        <input type="date" id="dataNascita" name="dataNascita"/>
+    </br></br>
+    <label for="indirizzo">Indirizzo</label>&nbsp;
+    <textarea type="text" id="indirizzo" name="indirizzo" rows="2" cols="50" placeholder="Inserisci l'indirizzo"></textarea>
+    <label for="telefono">Numero di telefono</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="es.345678934"/>
+    <label for="email">email</label>&nbsp;
+    <input type="email" id="email" name="email" minlength="9" requered/>
+ </fieldset>
+ <!-- gruppo preferenze-->
+  <fieldset>
+    <legend>Preferenze</legend>
+    <label for="corso scelto">Corso scelto</label>&nbsp;
+    <select id="corso scelto" name="corso">
+        <option value="" selected></option>
+        <option value="Fe">Front End</option>
+        <option value="Be">Back End</option>
+        <option value="FeBe">Full Stack</option>
+        <h4>Tipo di frequenza</h4>
+        <input type="radio" id="part-time" name="frequenza" value="part-time"/>
+        <label for="part-time">Part-time</label><br />
+        <input type="radio" id="full-time" name="frequenza" value="full-time"/>
+        <label for="full-time">full-time</label><br />
+        <input type="radio" id="serale" name="frequenza" value="serale"/>
+        <label for="serale">serale</label>
+        <h4>technologie</h4>
+        <label for="html">HTML</label>&nbsp;
+        <input type="checkbox" id="html" name="html" value="html"/>
+        <label for="css">CSS</label>
+        <input type="checkbox" id="css" name="css" value="css" />
+        <label for="javascript">javascript</label>
+        <input type="checkbox" id="javascript" name="javascript" value="javascript" />
+    </select>
+  </fieldset>
+  <br /> <br />
+  <button type="submit" id="send">Invia</button>
+  <button type="reset" id="clear">Annulla</button>
+</form>
+</article>
+</section>
+</main>
+<footer> epicoode &copy; 2024</footer>
+</body>
+</html>
